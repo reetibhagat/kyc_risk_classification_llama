@@ -1,32 +1,36 @@
-# kyc_risk_classification
-# **KYC Risk Classification using BERT Model**
+# KYC Risk Classification using LLaMA and BERT
 
-This repository contains code for **KYC risk classification** using  BERT models. The project automates KYC application risk evaluation by analyzing customer information and web-scraped public data. The model classifies applications into risk categories like `Approved`, `Review Required`, or `Rejected`.
+## Overview
+This project develops an automated KYC (Know Your Customer) risk classification system using transformer-based language models like **LLaMA** and **BERT** to streamline the onboarding process for financial services.
 
----
+## Key Features
 
-## **Features**
-- Fine-tune and use **BERT (public model)** for classification.
-- **Web scraping module** to fetch and analyze publicly available information about businesses.
-- **Airflow DAG integration** to automatically detect new KYC applications, process them, and generate classifications.
-- **Slack notifications** to alert the team of KYC application decisions.
+- 🔍 **Automated Risk Classification**  
+  Classifies onboarding applications into `Approved`, `Review Required`, or `Rejected` based on customer data using NLP models.
 
----
+- 🌐 **Web Scraping Integration**  
+  Augments internal KYC data with publicly available sources (e.g., watchlists, news, company data) for enhanced risk analysis.
 
-## **System Requirements**
-- Python 3.7+
-- Hugging Face Transformers
-- Hugging Face Hub access
-- Airflow for workflow automation
+- 📊 **Custom Model Training**  
+  Fine-tuned LLaMA and BERT models on proprietary KYC datasets using Jupyter notebooks and Python scripts.
 
----
+- ☁️ **Hugging Face Deployment**  
+  Hosted trained models on Hugging Face for real-time and scalable inference via API endpoints.
 
-## **Project Setup**
+- ⚙️ **Airflow Workflow Automation**  
+  Designed and scheduled an Apache Airflow DAG to automate the model training, validation, and deployment pipeline.
 
-1. **Clone the repository:**
+## Tech Stack
+
+- Python, PyTorch, Transformers (Hugging Face)
+- BERT, LLaMA (Meta)
+- Jupyter Notebook, Pandas, BeautifulSoup, Requests
+- Apache Airflow for orchestration
+- Hugging Face Hub for model deployment
+
+## Getting Started
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/kyc-risk-classification.git
-   cd kyc-risk-classification
-
-
-
+   git clone https://github.com/your-username/kyc_risk_classification_llama.git
+   cd kyc_risk_classification_llama
